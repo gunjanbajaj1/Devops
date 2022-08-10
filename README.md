@@ -1,1 +1,3 @@
-# Thsi contains script to create user in  linux
+
+
+This contains script to create user in linux.
