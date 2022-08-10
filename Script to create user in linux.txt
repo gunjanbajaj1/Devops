@@ -1,0 +1,13 @@
+#!/bin/bash
+
+echo -n "Enter the username: "
+read username
+
+echo -n "Enter the password: "
+read password
+
+pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
+
+sudo useradd -s /bin/bash -p $pass $username
+
+
