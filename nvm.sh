@@ -17,6 +17,9 @@ then
         echo "nvm version : $(nvm --version)"
         echo "node version : $(node --version)"
         echo "npm version : $(npm --version)"
+        export NVM_DIR="$HOME/.nvm"
+        [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
+        [ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion" 
     fi
 else
     echo "NVM is already installed $(nvm --version)"
