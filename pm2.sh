@@ -11,8 +11,6 @@ then
     then 
         echo "PM2 installation failed"
     else
-        pm2version = $(pm2 --version);
-        echo "pm2 version : $pm2version"    
         pm2list = $(pm2 ls);
         echo "pm2 list : pm2list"
     fi
