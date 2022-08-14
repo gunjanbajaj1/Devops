@@ -1,21 +1,21 @@
 #! /bin/bash
 
-chmod +x DEVOPS/*
+chmod +x *
 
 #Installing GIT
-bash DEVOPS/GIT.sh
+bash GIT.sh
 
 #Installing NVM
-bash DEVOPS/nvm.sh
+bash nvm.sh
 
 #Installing pm2
-bash DEVOPS/pm2.sh
+bash pm2.sh
 
 #Installing nginx
-bash DEVOPS/nginx.sh
+bash nginx.sh
 
 #Installing Jenkins
-bash DEVOPS/Jenkins.sh
+bash Jenkins.sh
 
 #Installing mongoDB
-bash DEVOPS/mongoDB.sh
+bash mongoDB.sh
