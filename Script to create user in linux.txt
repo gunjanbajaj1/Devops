@@ -6,8 +6,14 @@ read username
 echo -n "Enter the password: "
 read password
 
+cat /etc/passwd |grep ${username} >/dev/null
+
+if [ $? -ne 0 ]
+then
 pass=$(perl -e 'print crypt($ARGV[0], "password")' $password)
 
 sudo useradd -s /bin/bash -p $pass $username
-
+else 
+    echo "User is already exists."
+fi
 
