@@ -3,19 +3,57 @@
 chmod +x *
 
 #Installing GIT
-bash GIT.sh
+echo "Do you wish to install GIT?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash GIT.sh; break;;
+        No ) exit;;
+    esac
+done
+
 
 #Installing NVM
-bash nvm.sh
+echo "Do you wish to install nvm, node and npm ?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash nvm.sh; break;;
+        No ) exit;;
+    esac
+done
 
 #Installing pm2
-bash pm2.sh
+echo "Do you wish to install pm2 ?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash pm2.sh; break;;
+        No ) exit;;
+    esac
+done
 
 #Installing nginx
-bash nginx.sh
+echo "Do you wish to install nginx ?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash nginx.sh; break;;
+        No ) exit;;
+    esac
+done
 
 #Installing Jenkins
-bash Jenkins.sh
+echo "Do you wish to install Jenkins ?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash Jenkins.sh; break;;
+        No ) exit;;
+    esac
+done
+
 
 #Installing mongoDB
-bash mongoDB.sh
+echo "Do you wish to install mongoDB ?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash mongoDB.sh; break;;
+        No ) exit;;
+    esac
+done
