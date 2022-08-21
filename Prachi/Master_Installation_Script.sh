@@ -57,3 +57,12 @@ select yn in "Yes" "No"; do
         No ) exit;;
     esac
 done
+
+#Installing Docker
+echo "Do you wish to install Docker ?"
+select yn in "Yes" "No"; do
+    case $yn in
+        Yes ) bash Docker.sh; break;;
+        No ) exit;;
+    esac
+done

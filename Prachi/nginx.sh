@@ -1,6 +1,7 @@
 #! /bin/bash
 
-#Installing nginx
+#Installing nginx - https://www.digitalocean.com/community/tutorials/how-to-install-nginx-on-ubuntu-20-04
+
 echo "Installing nginx"
 systemctl status nginx;
 if [ $? -ne 0 ]

@@ -1,6 +1,7 @@
 #! /bin/bash
 
-#Installing GIT
+#Installing GIT - https://www.digitalocean.com/community/tutorials/how-to-install-git-on-ubuntu-20-04
+
 echo "Installing GIT"
 git --version;
 if [ $? -ne 0 ]

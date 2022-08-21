@@ -1,6 +1,9 @@
 #! /bin/bash
 
-#Installing mongoDB
+#Installing mongoDB - 
+#https://askubuntu.com/questions/1385440/ubuntu-sudo-apt-get-update-404-not-found-problem
+#https://www.cloudbooklet.com/how-to-install-mongodb-on-ubuntu-22-04/
+
 echo "Installing mongoDB"
 sudo service mongod status | grep running;
 if [ $? -ne 0 ]

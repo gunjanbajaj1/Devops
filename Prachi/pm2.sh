@@ -1,6 +1,7 @@
 #! /bin/bash
 
-#Installing pm2
+#Installing pm2 - https://pm2.keymetrics.io/docs/usage/quick-start/
+
 echo "Installing pm2"
 sudo apt update
 pm2 ls;

@@ -1,6 +1,7 @@
 #! /bin/bash
 
-#Installing Jenkins
+#Installing Jenkins - https://www.digitalocean.com/community/tutorials/how-to-install-jenkins-on-ubuntu-20-04
+#Installing JDK - https://www.digitalocean.com/community/tutorials/how-to-install-java-with-apt-on-ubuntu-20-04#installing-specific-versions-of-openjdk
 echo "Installing Jenkins"
 sudo systemctl status jenkins | grep running
 if [ $? -ne 0 ]
